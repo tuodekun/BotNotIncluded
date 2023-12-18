@@ -11,11 +11,18 @@ You can configure the script with these environment variables:
 | `BNI_PO_HANT`  | Root path of the zh-hant po file | `C:\Users\%USERNAME%\Documents\Klei\OxygenNotIncluded\mods\Steam\2906930548\strings.po` |
 
 ## Run
+Make sure to configure environment after entering virtual environment, or the Pywikibot package may not work as intended.
+
 ```sh
-python -m venv venv --clear
-pip install -r requirements.txt
+python3 -m venv venv --clear # create virtual environment (recommended)
+source venv/bin/activate # activate virtual environment
+pip3 install -r requirements.txt # install dependencies
 
 # Preparing necessary data
 
-python game_update.py
+python3 game_update.py
+
+# processing data
+
+deactivate # deactivate virtural environment
 ```
