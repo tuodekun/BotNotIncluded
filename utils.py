@@ -18,15 +18,14 @@ DIR_OUT = "out"
 DIR_CODE = path.join(DIR_DATA, "code")
 ONI_CN_BASEURL = "https://raw.githubusercontent.com/onicn/oni-cn.com/main/priv/data/"
 ONI_ROOT = os.environ.get(
-    "BNI_ONI_ROOT",  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\OxygenNotIncluded")
+    "BNI_ONI_ROOT",  path.join(path.expanduser("~"), 'Library', 'Application Support', 'Steam', 'steamapps', 'common', 'OxygenNotIncluded', 'OxygenNotIncluded.app'))
 
 # https://steamcommunity.com/sharedfiles/filedetails/?id=2906930548
 PO_HANT = os.environ.get(
-    "BNI_PO_HANT", path.join(path.expanduser("~"), 'Documents', 'Klei', 'OxygenNotIncluded',
-                             'mods', 'Steam', '2906930548', 'strings.po'))
+    "BNI_PO_HANT", path.join(path.expanduser("~"), 'Library', 'Application Support', 'Steam', 'steamapps', 'workshop', 'content', '457140', '2906930548', '5062640535619573437_legacy', 'strings.po'))
 
 
-def get_str_data(po_name=path.join(ONI_ROOT, "OxygenNotIncluded_Data", "StreamingAssets", "strings", "strings_preinstalled_zh_klei.po")):
+def get_str_data(po_name=path.join(ONI_ROOT, 'Contents', 'Resources', 'Data', 'StreamingAssets', 'strings', 'strings_preinstalled_zh_klei.po')):
     with open(path.join(DIR_DATA, po_name), 'rb') as f:
         while (l := f.readline()) != b'\n':  # skip first
             pass
@@ -71,7 +70,7 @@ def sub_controls_str(df: pd.DataFrame, fields: Tuple[str] = ('id', 'string', 'ha
 
 
 def get_tags(site):
-    assert isinstance(site, pywikibot.APISite)
+    assert isinstance(site, pywikibot.site._apisite.APISite)
     r = pywikibot.data.api.Request(
         site, parameters={"action": "query", "list": "tags"})
     res = r.submit()

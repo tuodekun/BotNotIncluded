@@ -9,3 +9,4 @@ def auto_license(site: pywikibot.Site):
 
 
 oni = pywikibot.Site('zh', 'oni')
+auto_license(oni)

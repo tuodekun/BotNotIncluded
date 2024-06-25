@@ -6,7 +6,7 @@ import yaml
 import utils
 
 elements_base = path.join(
-    utils.ONI_ROOT, "OxygenNotIncluded_Data", "StreamingAssets", "elements")
+    utils.ONI_ROOT, 'Contents', 'Resources', 'Data', 'StreamingAssets', 'elements')
 element_states = [
     "solid",
     "liquid",

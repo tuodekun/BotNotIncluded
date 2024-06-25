@@ -3,7 +3,7 @@ logger = utils.getLogger("Game update CI")
 
 
 def main():
-    comment = input("Current game vertion: ")
+    comment = input("Current game version: ")
 
     logger.info('Parse translation files')
     import parse_po
@@ -18,9 +18,10 @@ def main():
     elements.main()
 
     # TODO: use game dir
-    logger.info('Generating personalities data')
-    import textAsset.personalities
-    textAsset.personalities.main()
+    # Disabled because AssetStudio is not available on MacOS 
+    #logger.info('Generating personalities data')
+    #import textAsset.personalities
+    #textAsset.personalities.main()
 
     logger.info('Generating codex data')
     import get_codex

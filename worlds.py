@@ -6,7 +6,7 @@ import yaml
 
 import utils
 
-ASSETS_BASE = path.join(utils.ONI_ROOT, "OxygenNotIncluded_Data", "StreamingAssets")
+ASSETS_BASE = path.join(utils.ONI_ROOT, 'Contents', 'Resources', 'Data', 'StreamingAssets')
 
 clusters_base = path.join(ASSETS_BASE, "dlc", "expansion1", "worldgen", "worlds")
 

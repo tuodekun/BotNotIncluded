@@ -1,0 +1,12 @@
+#LWP-Cookies-2.0
+Set-Cookie3: disable_no_video_exp=1; path="/"; domain=".fandom.com"; path_spec; domain_dot; secure; expires="2024-06-26 13:47:11Z"; SameSite=None; version=0
+Set-Cookie3: exp_bucket=34; path="/"; domain=".fandom.com"; path_spec; domain_dot; expires="2024-12-22 13:47:11Z"; version=0
+Set-Cookie3: exp_bucket_2="v2-05"; path="/"; domain=".fandom.com"; path_spec; domain_dot; expires="2024-09-23 13:47:11Z"; version=0
+Set-Cookie3: Geo="{%22region%22:%2201%22%2C%22city%22:%22singapore%22%2C%22country_name%22:%22singapore%22%2C%22country%22:%22SG%22%2C%22continent%22:%22AS%22}"; path="/"; domain=".fandom.com"; path_spec; domain_dot; secure; discard; SameSite=None; version=0
+Set-Cookie3: _b2="LAWBCRXDc9.1680338934648"; path="/"; domain=".fandom.com"; path_spec; domain_dot; secure; expires="2025-03-31 08:48:54Z"; SameSite=None; version=0
+Set-Cookie3: wikicities_c10_session=u8apu6dv7sl5li069i29blumij8lgnev; path="/"; domain=".fandom.com"; path_spec; domain_dot; secure; discard; HttpOnly=None; version=0
+Set-Cookie3: wikicities_c10_BPsession=6llcfuk5dj5uek0sj112k5p1ssob1bgi; path="/"; domain=".fandom.com"; path_spec; domain_dot; secure; discard; HttpOnly=None; version=0
+Set-Cookie3: fandom__session=e58h6078h0i3g5crgsmerjcde57gi56u; path="/"; domain=".fandom.com"; path_spec; domain_dot; secure; discard; HttpOnly=None; version=0
+Set-Cookie3: fandom__BPsession=tnflfmd65mrjqacm018st2cguh0u1joo; path="/"; domain=".fandom.com"; path_spec; domain_dot; secure; discard; HttpOnly=None; version=0
+Set-Cookie3: wiki_session=q4gmi17rbbas89q0s9p0ihfdsc52num0; path="/"; domain=".wiki.gg"; path_spec; domain_dot; secure; discard; HttpOnly=None; version=0
+Set-Cookie3: commons_en_BPsession=0rvb783kj4803njpgm01jte3ic1qeh2l; path="/"; domain=".wiki.gg"; path_spec; domain_dot; secure; discard; HttpOnly=None; version=0
